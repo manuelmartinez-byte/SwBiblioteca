@@ -35,9 +35,8 @@ relacional, arquitectura por capas, operaciones CRUD, validaciones,
 manejo de excepciones y conexión con SQL Server.
 
 **Estudiante(s):** \[Manuel Martinez Carmona\]\
-**Programa:** \[Nombre del programa\]\
-**Grupo:** \[Grupo\]\
-**Docente:** \[Nombre del docente\]\
+**Programa:** \[Programación Avanzada\]\
+**Docente:** \[Veronica Castro Munar\]\
 **Institución:** \[Nombre de la institución\]\
 **Año:** \[Año\]
 
