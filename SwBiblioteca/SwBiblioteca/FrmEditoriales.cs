@@ -67,7 +67,9 @@ namespace SwBiblioteca
                 return;
             }
 
-            Conexion conexion = new Conexion();
+            try
+            {
+                Conexion conexion = new Conexion();
 
             using (SqlConnection cn = conexion.ObtenerConexion())
             {
@@ -96,7 +98,16 @@ namespace SwBiblioteca
             CargarEditoriales();
 
             txtInombreEditoriales.Clear();
-            txtInombreEditoriales.Focus();
+                txtInombreEditoriales.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al guardar la editorial:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         // *** Código btnNuevo_Click ***
@@ -276,7 +287,7 @@ namespace SwBiblioteca
 
         private void btnNuevoEditoriales_Click(object sender, EventArgs e)
         {
-
+            btnNuevo_Click(sender, e);
         }
     }
 }

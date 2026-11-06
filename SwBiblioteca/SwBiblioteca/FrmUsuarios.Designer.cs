@@ -73,9 +73,9 @@
             lblTitulo_Usuarios.ForeColor = SystemColors.ButtonHighlight;
             lblTitulo_Usuarios.Location = new Point(510, 9);
             lblTitulo_Usuarios.Name = "lblTitulo_Usuarios";
-            lblTitulo_Usuarios.Size = new Size(281, 36);
+            lblTitulo_Usuarios.Size = new Size(322, 36);
             lblTitulo_Usuarios.TabIndex = 0;
-            lblTitulo_Usuarios.Text = "GESTION DE LIBROS";
+            lblTitulo_Usuarios.Text = "GESTION DE USUARIOS";
             // 
             // pnlinfo_usuarios
             // 
@@ -234,6 +234,7 @@
             btnCancelar_usuarios.Text = "Cancelar";
             btnCancelar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCancelar_usuarios.UseVisualStyleBackColor = true;
+            btnCancelar_usuarios.Click += btnCancelar_Click;
             // 
             // btnEliminar_usuarios
             // 
@@ -265,6 +266,7 @@
             btnEditar_usuarios.Text = "Editar";
             btnEditar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar_usuarios.UseVisualStyleBackColor = true;
+            btnEditar_usuarios.Click += btnEditar_Click;
             // 
             // btnGuardar_usuarios
             // 
@@ -324,7 +326,6 @@
         private Panel pnlTitulo_usuarios;
         private Panel pnlinfo_usuarios;
         private Label lblTitulo_Usuarios;
-        private TextBox txtcorreo_usuarios;
         private Label lblapellido_usuarios;
         private Label lbldocumentos_usuarios;
         private Label lbltelefono_usuarios;

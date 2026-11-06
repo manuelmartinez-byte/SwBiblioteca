@@ -325,7 +325,12 @@ namespace SwBiblioteca
                     cmbAutor.SelectedIndex == -1 ||
                     cmbEditorial.SelectedIndex == -1)
                 {
-
+                    MessageBox.Show(
+                        "Complete todos los campos antes de guardar.",
+                        "Biblioteca",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
                 }
                 int ano, existencias;
                 if (!int.TryParse(txtano.Text, out ano) || !int.TryParse(txtexistencias.Text, out existencias))

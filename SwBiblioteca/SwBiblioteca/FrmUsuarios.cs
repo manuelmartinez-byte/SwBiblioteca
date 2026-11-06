@@ -59,20 +59,22 @@ namespace SwBiblioteca
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtnombre_usuarios.Text) ||
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtnombre_usuarios.Text) ||
        string.IsNullOrWhiteSpace(txtapellido_usuarios.Text) ||
        string.IsNullOrWhiteSpace(txtdocumentos_usuarios.Text) ||
        string.IsNullOrWhiteSpace(txttelefono_usuarios.Text) ||
        string.IsNullOrWhiteSpace(txtcorreoe_usuarios.Text))
-            {
-                MessageBox.Show(
+                {
+                    MessageBox.Show(
                     "Complete todos los campos antes de guardar.",
                     "Biblioteca",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
-                return;
-            }
+                    return;
+                }
 
             Conexion conexion = new Conexion();
 
@@ -111,6 +113,15 @@ namespace SwBiblioteca
 
 
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al guardar el usuario:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void btnNuevo_usuarios_Click(object sender, EventArgs e)
@@ -146,16 +157,18 @@ namespace SwBiblioteca
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (dgvUsuarios.CurrentRow == null)
+            try
             {
+                if (dgvUsuarios.CurrentRow == null)
+                {
                 MessageBox.Show(
                     "Seleccione un usuario para editar.",
                     "Biblioteca",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
-                return;
-            }
+                    return;
+                }
 
             int idUsuario = Convert.ToInt32(
                 dgvUsuarios.CurrentRow.Cells["IdUsuario"].Value);
@@ -229,20 +242,31 @@ namespace SwBiblioteca
             CargarUsuarios();
 
             btnNuevo_usuarios_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al actualizar el usuario:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void btnEliminar_usuarios_Click(object sender, EventArgs e)
         {
-            if (dgvUsuarios.CurrentRow == null)
+            try
             {
+                if (dgvUsuarios.CurrentRow == null)
+                {
                 MessageBox.Show(
                     "Seleccione un usuario para eliminar.",
                     "Biblioteca",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
-                return;
-            }
+                    return;
+                }
 
             int idUsuario = Convert.ToInt32(
                 dgvUsuarios.CurrentRow.Cells["IdUsuario"].Value);
@@ -284,6 +308,15 @@ namespace SwBiblioteca
             CargarUsuarios();
 
             btnNuevo_usuarios_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al eliminar el usuario:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         // *** Código btnCancelar_Click ***
@@ -294,7 +327,7 @@ namespace SwBiblioteca
             txtapellido_usuarios.Clear();
             txtdocumentos_usuarios.Clear();
             txttelefono_usuarios.Clear();
-            txtcorreo_usuarios.Clear();
+            txtcorreoe_usuarios.Clear();
 
             dgvUsuarios.ClearSelection();
 

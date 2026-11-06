@@ -130,6 +130,7 @@
             btnCancelarautores.Text = "Cancelar";
             btnCancelarautores.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCancelarautores.UseVisualStyleBackColor = true;
+            btnCancelarautores.Click += btnCancelar_Click;
             // 
             // btnautores
             // 
@@ -145,6 +146,7 @@
             btnautores.Text = "Eliminar";
             btnautores.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnautores.UseVisualStyleBackColor = true;
+            btnautores.Click += btnEliminar_Click;
             // 
             // btnEditarautores
             // 
@@ -160,6 +162,7 @@
             btnEditarautores.Text = "Editar";
             btnEditarautores.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditarautores.UseVisualStyleBackColor = true;
+            btnEditarautores.Click += btnEditar_Click;
             // 
             // btnGuardarautores
             // 
@@ -191,6 +194,7 @@
             btnNuevoautores.Text = "Nuevo";
             btnNuevoautores.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNuevoautores.UseVisualStyleBackColor = true;
+            btnNuevoautores.Click += btnNuevo_Click;
             // 
             // txtnombre_autores
             // 
@@ -218,6 +222,7 @@
             dgvAutores.Name = "dgvAutores";
             dgvAutores.Size = new Size(883, 260);
             dgvAutores.TabIndex = 13;
+            dgvAutores.CellDoubleClick += dgvAutores_CellDoubleClick;
             // 
             // FrmAutores
             // 

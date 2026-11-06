@@ -106,7 +106,7 @@
             btnCancelarEditoriales.Text = "Cancelar";
             btnCancelarEditoriales.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCancelarEditoriales.UseVisualStyleBackColor = true;
-            btnCancelarEditoriales.Click += BtnCancelarEditoriales_Click;
+            btnCancelarEditoriales.Click += btnCancelar_Click;
             // 
             // btnEliminarEditoriales
             // 
@@ -122,6 +122,7 @@
             btnEliminarEditoriales.Text = "Eliminar";
             btnEliminarEditoriales.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminarEditoriales.UseVisualStyleBackColor = true;
+            btnEliminarEditoriales.Click += btnEliminar_Click;
             // 
             // btnEditarEditoriales
             // 
@@ -137,6 +138,7 @@
             btnEditarEditoriales.Text = "Editar";
             btnEditarEditoriales.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditarEditoriales.UseVisualStyleBackColor = true;
+            btnEditarEditoriales.Click += btnEditar_Click;
             // 
             // btnGuardarEditoriales
             // 
@@ -152,6 +154,7 @@
             btnGuardarEditoriales.Text = "Guardar";
             btnGuardarEditoriales.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGuardarEditoriales.UseVisualStyleBackColor = true;
+            btnGuardarEditoriales.Click += btnGuardar_Click;
             // 
             // btnNuevoEditoriales
             // 
@@ -195,6 +198,7 @@
             dgvEditoriales.Name = "dgvEditoriales";
             dgvEditoriales.Size = new Size(883, 260);
             dgvEditoriales.TabIndex = 12;
+            dgvEditoriales.CellDoubleClick += dgvEditoriales_CellDoubleClick;
             // 
             // FrmEditoriales
             // 
@@ -213,11 +217,6 @@
             pnlBotones_editoriales.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvEditoriales).EndInit();
             ResumeLayout(false);
-        }
-
-        private void BtnCancelarEditoriales_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion
