@@ -329,6 +329,7 @@
             btnEliminar.Text = "Eliminar";
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
@@ -344,6 +345,7 @@
             btnEditar.Text = "Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnGuardar
             // 
@@ -384,6 +386,7 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.Size = new Size(883, 260);
             dgvLibros.TabIndex = 4;
+            dgvLibros.CellDoubleClick += dgvLibros_CellDoubleClick;
             // 
             // FrmLibros
             // 

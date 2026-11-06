@@ -13,6 +13,8 @@ namespace SwBiblioteca
 {
     public partial class FrmLibros : Form
     {
+        private bool modoEdicion;
+
         public FrmLibros()
         {
             InitializeComponent();
@@ -209,7 +211,7 @@ namespace SwBiblioteca
         {
             try
             {
-                if(string.IsNullOrWhiteSpace(txtbusquedaISBN.Text))
+                if (string.IsNullOrWhiteSpace(txtbusquedaISBN.Text))
                 {
                     MessageBox.Show(
                         "Ingrese un ISBN para realizar la búsqueda.",
@@ -239,7 +241,7 @@ namespace SwBiblioteca
                                 txtcategoria.Text = lector["Categoria"].ToString();
                                 txtano.Text = lector["Anio"].ToString();
                                 txtexistencias.Text = lector["Existencias"].ToString();
-                                
+
                                 MessageBox.Show(
                                     "Libro encontrado.",
                                     "Biblioteca",
@@ -313,7 +315,7 @@ namespace SwBiblioteca
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
-            { 
+            {
 
                 if (string.IsNullOrWhiteSpace(txtISBN.Text) ||
                     string.IsNullOrWhiteSpace(txttitulo.Text) ||
@@ -322,9 +324,9 @@ namespace SwBiblioteca
                     string.IsNullOrWhiteSpace(txtexistencias.Text) ||
                     cmbAutor.SelectedIndex == -1 ||
                     cmbEditorial.SelectedIndex == -1)
-            {
-                
-            }
+                {
+
+                }
                 int ano, existencias;
                 if (!int.TryParse(txtano.Text, out ano) || !int.TryParse(txtexistencias.Text, out existencias))
                 {
@@ -371,11 +373,11 @@ namespace SwBiblioteca
                         comando.Parameters.AddWithValue("@Anio", ano);
                         comando.Parameters.AddWithValue("@Existencias", existencias);
                         comando.ExecuteNonQuery();
-                       
-                           
-                            
-                        
-                       
+
+
+
+
+
                     }
 
                     MessageBox.Show(
@@ -405,7 +407,200 @@ namespace SwBiblioteca
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            txtISBN.Clear();
+            txttitulo.Clear();
+            txtcategoria.Clear();
+            txtano.Clear();
+            txtexistencias.Clear();
 
+            cmbAutor.SelectedIndex = -1;
+            cmbEditorial.SelectedIndex = -1;
+
+            modoEdicion = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtISBN.Text) ||
+                    string.IsNullOrWhiteSpace(txttitulo.Text) ||
+                    cmbAutor.SelectedIndex == -1 ||
+                    cmbEditorial.SelectedIndex == -1 ||
+                    string.IsNullOrWhiteSpace(txtcategoria.Text) ||
+                    string.IsNullOrWhiteSpace(txtano.Text) ||
+                    string.IsNullOrWhiteSpace(txtexistencias.Text))
+                {
+                    MessageBox.Show(
+                        "Complete todos los campos antes de editar.",
+                        "Biblioteca",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    return;
+                }
+
+                int anio;
+                int existencias;
+
+                if (!int.TryParse(txtano.Text, out anio))
+                {
+                    MessageBox.Show(
+                        "El año debe ser un número entero.",
+                        "Biblioteca",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    return;
+                }
+
+                if (!int.TryParse(txtexistencias.Text, out existencias))
+                {
+                    MessageBox.Show(
+                        "Las existencias deben ser un número entero.",
+                        "Biblioteca",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    return;
+                }
+
+                Conexion conexion = new Conexion();
+
+                using (SqlConnection cn = conexion.ObtenerConexion())
+                {
+                    cn.Open();
+
+                    string consulta = @"UPDATE Libros
+                                SET Titulo = @Titulo,
+                                    IdAutor = @IdAutor,
+                                    IdEditorial = @IdEditorial,
+                                    Categoria = @Categoria,
+                                    Anio = @Anio,
+                                    Existencias = @Existencias
+                                WHERE ISBN = @ISBN";
+
+                    using (SqlCommand comando = new SqlCommand(consulta, cn))
+                    {
+                        comando.Parameters.AddWithValue("@ISBN", txtISBN.Text.Trim());
+                        comando.Parameters.AddWithValue("@Titulo", txttitulo.Text.Trim());
+                        comando.Parameters.AddWithValue("@IdAutor", Convert.ToInt32(cmbAutor.SelectedValue));
+                        comando.Parameters.AddWithValue("@IdEditorial", Convert.ToInt32(cmbEditorial.SelectedValue));
+                        comando.Parameters.AddWithValue("@Categoria", txtcategoria.Text.Trim());
+                        comando.Parameters.AddWithValue("@Anio", anio);
+                        comando.Parameters.AddWithValue("@Existencias", existencias);
+
+                        comando.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show(
+                    "Libro actualizado correctamente.",
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                CargarLibros();
+                btnCancelar_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al actualizar el libro:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void dgvLibros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            txtISBN.Text = dgvLibros.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+            txttitulo.Text = dgvLibros.Rows[e.RowIndex].Cells["Titulo"].Value.ToString();
+
+            cmbAutor.SelectedValue = Convert.ToInt32(
+                dgvLibros.Rows[e.RowIndex].Cells["IdAutor"].Value
+            );
+
+            cmbEditorial.SelectedValue = Convert.ToInt32(
+                dgvLibros.Rows[e.RowIndex].Cells["IdEditorial"].Value
+            );
+
+            txtcategoria.Text = dgvLibros.Rows[e.RowIndex].Cells["Categoria"].Value.ToString();
+            txtano.Text = dgvLibros.Rows[e.RowIndex].Cells["Anio"].Value.ToString();
+            txtexistencias.Text = dgvLibros.Rows[e.RowIndex].Cells["Existencias"].Value.ToString();
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvLibros.CurrentRow == null)
+                {
+                    MessageBox.Show(
+                        "Seleccione un libro para eliminar.",
+                        "Biblioteca",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    return;
+                }
+
+                string isbn = dgvLibros.CurrentRow.Cells["ISBN"].Value.ToString();
+
+                DialogResult respuesta = MessageBox.Show(
+                    "¿Está seguro de eliminar este libro?",
+                    "Biblioteca",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (respuesta == DialogResult.No)
+                {
+                    return;
+                }
+
+                Conexion conexion = new Conexion();
+
+                using (SqlConnection cn = conexion.ObtenerConexion())
+                {
+                    cn.Open();
+
+                    string consulta = "DELETE FROM Libros WHERE ISBN = @ISBN";
+
+                    using (SqlCommand comando = new SqlCommand(consulta, cn))
+                    {
+                        comando.Parameters.AddWithValue("@ISBN", isbn);
+
+                        comando.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show(
+                    "Libro eliminado correctamente.",
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                modoEdicion = false;
+                txtISBN.Enabled = true;
+
+                CargarLibros();
+
+                btnNuevo_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al eliminar el libro:\n" + ex.Message,
+                    "Biblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
     }
 }
