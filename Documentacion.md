@@ -37,8 +37,8 @@ manejo de excepciones y conexión con SQL Server.
 **Estudiante(s):** \[Manuel Martinez Carmona\]\
 **Programa:** \[Programación Avanzada\]\
 **Docente:** \[Veronica Castro Munar\]\
-**Institución:** \[Nombre de la institución\]\
-**Año:** \[Año\]
+**Institución:** \[CUN\]\
+**Año:** \[2026\]
 
 ------------------------------------------------------------------------
 
@@ -63,7 +63,6 @@ manejo de excepciones y conexión con SQL Server.
 12. Pruebas de funcionamiento
 13. Conclusiones
 14. Recomendaciones
-15. Referencias bibliográficas
 
 ------------------------------------------------------------------------
 
@@ -76,19 +75,14 @@ desarrollado.
 
 El presente documento describe el desarrollo del **Sistema de Gestión de
 Biblioteca**, una aplicación de escritorio cuyo propósito es facilitar
-la administración de \[describir brevemente los procesos principales de
-la biblioteca\].
+la administración de registros de libros, usuarios, autores y prestamos 
+asi como realizar consultas de historial
 
-El sistema fue desarrollado utilizando **\[C# / .NET / Windows Forms /
-SQL Server / otras tecnologías utilizadas\]**, aplicando principios de
+El sistema fue desarrollado utilizando C#, visual code, visual code studio, SQL managment, Github, aplicando principios de
 Programación Orientada a Objetos y una arquitectura por capas.
 
-La aplicación permite gestionar \[libros, autores, categorías, usuarios,
-préstamos, devoluciones y demás funcionalidades realmente
-implementadas\].
-
-> **Reemplazar este texto por la introducción propia del proyecto.**
-
+La aplicación permite gestionar libros, autores, categorías, usuarios,
+préstamo y devoluciones
 ------------------------------------------------------------------------
 
 # 2. OBJETIVOS
@@ -158,7 +152,7 @@ El sistema permitirá:
 -   Registrar devoluciones.
 -   Consultar disponibilidad.
 -   Consultar historial de préstamos.
--   \[Agregar otras funcionalidades implementadas\].
+
 
 ### Fuera del alcance
 
@@ -307,9 +301,7 @@ nuevamente.
 
 La multa se calculará únicamente cuando exista retraso en la devolución.
 
-### RN09 -- \[Otra regla\]
 
-\[Descripción.\]
 
 ------------------------------------------------------------------------
 
@@ -761,11 +753,8 @@ retraso. - Calcular multa cuando aplique. - Actualizar disponibilidad.
 -   Libros prestados.
 -   Usuarios con préstamos activos.
 -   Historial de préstamos.
--   Libros más prestados.
--   \[Otras consultas implementadas.\]
 
-> **Eliminar las consultas que no estén implementadas y agregar las que
-> sí existan.**
+
 
 ------------------------------------------------------------------------
 
@@ -831,7 +820,7 @@ funcionalidades.
 
 ## 12.1 Estrategia de pruebas
 
-Describir cómo se verificó el funcionamiento del sistema.
+Se realizo paso por paso solicitidado y las pruebas fueron adjuntadas en el archivo 12.3 y 11.
 
 ## 12.2 Casos de prueba
 
@@ -839,36 +828,36 @@ Describir cómo se verificó el funcionamiento del sistema.
   ID          Funcionalidad   Entrada / Acción Resultado        Resultado       Estado
                                                esperado         obtenido        
   ----------- --------------- ---------------- ---------------- --------------- ------------
-  CP01        Registrar libro Datos válidos    Libro registrado \[Resultado\]   Aprobado
+  CP01        Registrar libro Datos válidos    Libro registrado Comprobado      Aprobado
                                                correctamente                    
 
-  CP02        Registrar libro Código repetido  Mostrar mensaje  \[Resultado\]   Aprobado
+  CP02        Registrar libro Código repetido  Mostrar mensaje  Comprobado      Aprobado
                                                de validación                    
 
-  CP03        Registrar       Datos válidos    Usuario          \[Resultado\]   Aprobado
+  CP03        Registrar       Datos válidos    Usuario          Comprobado      Aprobado
               usuario                          registrado                       
 
-  CP04        Registrar       Libro disponible Préstamo         \[Resultado\]   Aprobado
+  CP04        Registrar       Libro disponible Préstamo         Comprobado      Aprobado
               préstamo                         registrado y                     
                                                disponibilidad                   
                                                actualizada                      
 
-  CP05        Registrar       Libro sin        No permitir el   \[Resultado\]   Aprobado
+  CP05        Registrar       Libro sin        No permitir el   Comprobado      Aprobado
               préstamo        disponibilidad   préstamo                         
 
-  CP06        Registrar       Préstamo activo  Registrar        \[Resultado\]   Aprobado
+  CP06        Registrar       Préstamo activo  Registrar        Comprobado      Aprobado
               devolución                       devolución y                     
                                                actualizar                       
                                                disponibilidad                   
 
-  CP07        Devolución con  Fecha posterior  Calcular retraso \[Resultado\]   Aprobado
+  CP07        Devolución con  Fecha posterior  Calcular retraso  Comprobado     Aprobado
               retraso         a la estimada    y multa                          
 
-  CP08        Consulta        Consultar libros Mostrar libros   \[Resultado\]   Aprobado
+  CP08        Consulta        Consultar libros Mostrar libros   Comprobado      Aprobado
                               disponibles      disponibles                      
 
-  CP09        \[Otra prueba\] \[Entrada\]      \[Resultado      \[Resultado\]   \[Estado\]
-                                               esperado\]                       
+
+                     
   ------------------------------------------------------------------------------------------
 
 ## 12.3 Evidencias de pruebas
@@ -893,57 +882,31 @@ Insertar capturas que demuestren los resultados de las pruebas.
 
 ## Conclusión 1
 
-\[Explicar qué se logró con el desarrollo del proyecto.\]
+Aprendi bastante durante este proyecto, fue mi primer aplicativo creado y me entretuve bastante aunque no fue para nada sencillo
 
 ## Conclusión 2
 
-\[Explicar los conocimientos de Programación Orientada a Objetos
-aplicados.\]
+Programacion Orienta a Objetos me ayudo bastante a entender a mayor profundidad como funcionan este tipo de programas y conceptos como la heriencia POO me ayudaron a que fuera mas facil de ejecutar
 
 ## Conclusión 3
 
-\[Explicar los resultados obtenidos con la base de datos y la
-arquitectura por capas.\]
+Bases de datos fue el mayor reto durante todo el aplicativo, no habia tenido nunca un acercamiento con SQL y aun asi gracias a los tips de la docente pude entender su funcionalidad y pude aplicarlo sin problema
 
 ## Conclusión 4
 
-\[Explicar dificultades encontradas y cómo fueron solucionadas.\]
+Uno de los mayores retos fue intentar aplicar guias recomendadas por el copilot integrado de visual studio, lo cual llevo a que mi codigo se corrompiera y tuviera que iniciar desde 0, por suerte fue en las primeras semanas, esto hizo que para la segunda vez me motivara a trabajar sin ayuda de IA y pudiera sacarlo adelante, adicional fue muy entrenido trabajar por primera vez con C# dado que solo estaba acostumbrado a usar Python
 
 ------------------------------------------------------------------------
 
 # 14. RECOMENDACIONES
 
--   \[Recomendación relacionada con futuras mejoras.\]
--   \[Recomendación relacionada con seguridad.\]
--   \[Recomendación relacionada con mantenimiento.\]
--   \[Recomendación relacionada con nuevas funcionalidades.\]
--   \[Otra recomendación.\]
+-   Una recomendacion clave enfrentanda durante la creacion del proyecto seria buscar compañeros para futuras entregas y asi reducir la carga de trabajo acumulado
+-   Evitaria el uso de cualquier herramienta 3era con el proposito de proteger mi codigo aun mas y evitar que lo puedan robar
+-   Me gustaria añadir a futuros proyectos una pagina de soporte para que el usuario final pueda dejar feedbacks o reportar errores que puedan enfrentar con el programa
+
 
 ------------------------------------------------------------------------
 
-# 15. REFERENCIAS BIBLIOGRÁFICAS
-
-> Utilizar **Normas APA, última edición**.
-
-Ejemplos de formato:
-
-**Libro:**
-
-Apellido, N. (Año). *Título del libro*. Editorial.
-
-**Página web:**
-
-Autor/Organización. (Año). *Título del recurso*. URL
-
-**Documentación técnica:**
-
-Microsoft. (Año). *\[Título de la documentación consultada\]*. Microsoft
-Learn.
-
-> **Importante:** incluir únicamente las fuentes que realmente fueron
-> consultadas durante el desarrollo del proyecto.
-
-------------------------------------------------------------------------
 
 # ANEXOS
 
@@ -960,14 +923,16 @@ Learn.
 Insertar capturas que evidencien:
 
 -   Creación del repositorio.
+
 -   Commits realizados.
+
 -   Organización del proyecto.
+
 -   Publicación del código.
+
 -   README.md.
 
-## Anexo D. Otras evidencias
 
-\[Agregar cualquier evidencia adicional relevante.\]
 
 ------------------------------------------------------------------------
 
@@ -992,7 +957,6 @@ Insertar capturas que evidencien:
 -   [ ] Pruebas de funcionamiento.
 -   [ ] Conclusiones.
 -   [ ] Recomendaciones.
--   [ ] Referencias bibliográficas en formato APA.
 -   [ ] Código fuente completo.
 -   [ ] Script SQL.
 -   [ ] Datos de prueba.
