@@ -602,5 +602,10 @@ namespace SwBiblioteca
                     MessageBoxIcon.Error);
             }
         }
+
+        private void dgvLibros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,365 @@
+﻿namespace SwBiblioteca
+{
+    partial class FrmUsuarios
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pnlTitulo_usuarios = new Panel();
+            lblTitulo = new Label();
+            this.pnlinfo_usuarios = new Panel();
+            lblnombre_usuarios = new Label();
+            this.cmbcorreo_usuarios = new TextBox();
+            this.txtapellido_usuarios = new TextBox();
+            this.txtnombre_usuarios = new TextBox();
+            this.lblapellido_usuarios = new Label();
+            this.lbl = new Label();
+            this.lbltelefono_usuarios = new Label();
+            lblcorreo_usuarios = new Label();
+            lblnombre = new Label();
+            dgvUsuarios = new DataGridView();
+            txtdocumentos_usuarios = new TextBox();
+            txttelefono_usuarios = new TextBox();
+            pnlBotones_usuarios = new Panel();
+            btnCancelar_usuarios = new FontAwesome.Sharp.IconButton();
+            btnEliminar_usuarios = new FontAwesome.Sharp.IconButton();
+            btnEditar_usuarios = new FontAwesome.Sharp.IconButton();
+            btnGuardar_usuarios = new FontAwesome.Sharp.IconButton();
+            btnNuevo_usuarios = new FontAwesome.Sharp.IconButton();
+            this.pnlTitulo_usuarios.SuspendLayout();
+            this.pnlinfo_usuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
+            pnlBotones_usuarios.SuspendLayout();
+            SuspendLayout();
+            // 
+            // pnlTitulo_usuarios
+            // 
+            this.pnlTitulo_usuarios.BackColor = SystemColors.Highlight;
+            this.pnlTitulo_usuarios.Controls.Add(lblTitulo);
+            this.pnlTitulo_usuarios.Dock = DockStyle.Top;
+            this.pnlTitulo_usuarios.Location = new Point(0, 0);
+            this.pnlTitulo_usuarios.Name = "pnlTitulo_usuarios";
+            this.pnlTitulo_usuarios.Size = new Size(1476, 60);
+            this.pnlTitulo_usuarios.TabIndex = 1;
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.BackColor = Color.Transparent;
+            lblTitulo.Font = new Font("Corbel", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = SystemColors.ButtonHighlight;
+            lblTitulo.Location = new Point(510, 9);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(281, 36);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "GESTION DE LIBROS";
+            // 
+            // pnlinfo_usuarios
+            // 
+            this.pnlinfo_usuarios.Controls.Add(txttelefono_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(txtdocumentos_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(lblnombre_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(this.cmbcorreo_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(this.txtapellido_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(this.txtnombre_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(this.lblapellido_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(this.lbl);
+            this.pnlinfo_usuarios.Controls.Add(this.lbltelefono_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(lblcorreo_usuarios);
+            this.pnlinfo_usuarios.Controls.Add(lblnombre);
+            this.pnlinfo_usuarios.Dock = DockStyle.Top;
+            this.pnlinfo_usuarios.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            this.pnlinfo_usuarios.Location = new Point(0, 60);
+            this.pnlinfo_usuarios.Name = "pnlinfo_usuarios";
+            this.pnlinfo_usuarios.Size = new Size(1476, 352);
+            this.pnlinfo_usuarios.TabIndex = 3;
+            // 
+            // lblnombre_usuarios
+            // 
+            lblnombre_usuarios.AutoSize = true;
+            lblnombre_usuarios.BackColor = Color.Transparent;
+            lblnombre_usuarios.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnombre_usuarios.ForeColor = SystemColors.ActiveCaptionText;
+            lblnombre_usuarios.Location = new Point(464, 33);
+            lblnombre_usuarios.Name = "lblnombre_usuarios";
+            lblnombre_usuarios.Size = new Size(80, 19);
+            lblnombre_usuarios.TabIndex = 20;
+            lblnombre_usuarios.Text = "NOMBRE:";
+            // 
+            // cmbcorreo_usuarios
+            // 
+            this.cmbcorreo_usuarios.Location = new Point(614, 160);
+            this.cmbcorreo_usuarios.Name = "cmbcorreo_usuarios";
+            this.cmbcorreo_usuarios.Size = new Size(214, 27);
+            this.cmbcorreo_usuarios.TabIndex = 14;
+            // 
+            // txtapellido_usuarios
+            // 
+            this.txtapellido_usuarios.Location = new Point(614, 58);
+            this.txtapellido_usuarios.Name = "txtapellido_usuarios";
+            this.txtapellido_usuarios.Size = new Size(214, 27);
+            this.txtapellido_usuarios.TabIndex = 11;
+            // 
+            // txtnombre_usuarios
+            // 
+            this.txtnombre_usuarios.Location = new Point(614, 25);
+            this.txtnombre_usuarios.Name = "txtnombre_usuarios";
+            this.txtnombre_usuarios.Size = new Size(214, 27);
+            this.txtnombre_usuarios.TabIndex = 10;
+            // 
+            // lblapellido_usuarios
+            // 
+            this.lblapellido_usuarios.AutoSize = true;
+            this.lblapellido_usuarios.BackColor = Color.Transparent;
+            this.lblapellido_usuarios.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            this.lblapellido_usuarios.ForeColor = SystemColors.ActiveCaptionText;
+            this.lblapellido_usuarios.Location = new Point(464, 62);
+            this.lblapellido_usuarios.Name = "lblapellido_usuarios";
+            this.lblapellido_usuarios.Size = new Size(98, 19);
+            this.lblapellido_usuarios.TabIndex = 6;
+            this.lblapellido_usuarios.Text = "APELLIDOS:";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.BackColor = Color.Transparent;
+            this.lbl.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            this.lbl.ForeColor = SystemColors.ActiveCaptionText;
+            this.lbl.Location = new Point(464, 95);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new Size(112, 19);
+            this.lbl.TabIndex = 5;
+            this.lbl.Text = "DOCUMENTO:";
+            // 
+            // lbltelefono_usuarios
+            // 
+            this.lbltelefono_usuarios.AutoSize = true;
+            this.lbltelefono_usuarios.BackColor = Color.Transparent;
+            this.lbltelefono_usuarios.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            this.lbltelefono_usuarios.ForeColor = SystemColors.ActiveCaptionText;
+            this.lbltelefono_usuarios.Location = new Point(464, 130);
+            this.lbltelefono_usuarios.Name = "lbltelefono_usuarios";
+            this.lbltelefono_usuarios.Size = new Size(94, 19);
+            this.lbltelefono_usuarios.TabIndex = 4;
+            this.lbltelefono_usuarios.Text = "TELEFONO:";
+            // 
+            // lblcorreo_usuarios
+            // 
+            lblcorreo_usuarios.AutoSize = true;
+            lblcorreo_usuarios.BackColor = Color.Transparent;
+            lblcorreo_usuarios.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblcorreo_usuarios.ForeColor = SystemColors.ActiveCaptionText;
+            lblcorreo_usuarios.Location = new Point(464, 160);
+            lblcorreo_usuarios.Name = "lblcorreo_usuarios";
+            lblcorreo_usuarios.Size = new Size(76, 19);
+            lblcorreo_usuarios.TabIndex = 3;
+            lblcorreo_usuarios.Text = "CORREO:";
+            lblcorreo_usuarios.Click += lblcorreo_usuarios_Click;
+            // 
+            // lblnombre
+            // 
+            lblnombre.Location = new Point(0, 0);
+            lblnombre.Name = "lblnombre";
+            lblnombre.Size = new Size(100, 23);
+            lblnombre.TabIndex = 19;
+            // 
+            // dgvUsuarios
+            // 
+            dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsuarios.Location = new Point(238, 490);
+            dgvUsuarios.Name = "dgvUsuarios";
+            dgvUsuarios.Size = new Size(883, 260);
+            dgvUsuarios.TabIndex = 5;
+            // 
+            // txtdocumentos_usuarios
+            // 
+            txtdocumentos_usuarios.Location = new Point(614, 92);
+            txtdocumentos_usuarios.Name = "txtdocumentos_usuarios";
+            txtdocumentos_usuarios.Size = new Size(214, 27);
+            txtdocumentos_usuarios.TabIndex = 21;
+            // 
+            // txttelefono_usuarios
+            // 
+            txttelefono_usuarios.Location = new Point(614, 127);
+            txttelefono_usuarios.Name = "txttelefono_usuarios";
+            txttelefono_usuarios.Size = new Size(214, 27);
+            txttelefono_usuarios.TabIndex = 22;
+            // 
+            // pnlBotones_usuarios
+            // 
+            pnlBotones_usuarios.Controls.Add(btnCancelar_usuarios);
+            pnlBotones_usuarios.Controls.Add(btnEliminar_usuarios);
+            pnlBotones_usuarios.Controls.Add(btnEditar_usuarios);
+            pnlBotones_usuarios.Controls.Add(btnGuardar_usuarios);
+            pnlBotones_usuarios.Controls.Add(btnNuevo_usuarios);
+            pnlBotones_usuarios.Location = new Point(430, 417);
+            pnlBotones_usuarios.Name = "pnlBotones_usuarios";
+            pnlBotones_usuarios.Size = new Size(617, 63);
+            pnlBotones_usuarios.TabIndex = 6;
+            // 
+            // btnCancelar_usuarios
+            // 
+            btnCancelar_usuarios.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
+            btnCancelar_usuarios.IconColor = Color.Black;
+            btnCancelar_usuarios.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            btnCancelar_usuarios.IconSize = 25;
+            btnCancelar_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCancelar_usuarios.Location = new Point(503, 10);
+            btnCancelar_usuarios.Name = "btnCancelar_usuarios";
+            btnCancelar_usuarios.Size = new Size(100, 40);
+            btnCancelar_usuarios.TabIndex = 4;
+            btnCancelar_usuarios.Text = "Cancelar";
+            btnCancelar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCancelar_usuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar_usuarios
+            // 
+            btnEliminar_usuarios.IconChar = FontAwesome.Sharp.IconChar.ThumbsDown;
+            btnEliminar_usuarios.IconColor = Color.Black;
+            btnEliminar_usuarios.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            btnEliminar_usuarios.IconSize = 25;
+            btnEliminar_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEliminar_usuarios.Location = new Point(383, 10);
+            btnEliminar_usuarios.Name = "btnEliminar_usuarios";
+            btnEliminar_usuarios.Size = new Size(100, 40);
+            btnEliminar_usuarios.TabIndex = 3;
+            btnEliminar_usuarios.Text = "Eliminar";
+            btnEliminar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEliminar_usuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar_usuarios
+            // 
+            btnEditar_usuarios.IconChar = FontAwesome.Sharp.IconChar.ShareSquare;
+            btnEditar_usuarios.IconColor = Color.Black;
+            btnEditar_usuarios.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            btnEditar_usuarios.IconSize = 25;
+            btnEditar_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEditar_usuarios.Location = new Point(263, 10);
+            btnEditar_usuarios.Name = "btnEditar_usuarios";
+            btnEditar_usuarios.Size = new Size(100, 40);
+            btnEditar_usuarios.TabIndex = 2;
+            btnEditar_usuarios.Text = "Editar";
+            btnEditar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEditar_usuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar_usuarios
+            // 
+            btnGuardar_usuarios.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnGuardar_usuarios.IconColor = Color.Black;
+            btnGuardar_usuarios.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            btnGuardar_usuarios.IconSize = 25;
+            btnGuardar_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnGuardar_usuarios.Location = new Point(143, 10);
+            btnGuardar_usuarios.Name = "btnGuardar_usuarios";
+            btnGuardar_usuarios.Size = new Size(100, 40);
+            btnGuardar_usuarios.TabIndex = 1;
+            btnGuardar_usuarios.Text = "Guardar";
+            btnGuardar_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnGuardar_usuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo_usuarios
+            // 
+            btnNuevo_usuarios.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            btnNuevo_usuarios.IconColor = Color.Black;
+            btnNuevo_usuarios.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            btnNuevo_usuarios.IconSize = 25;
+            btnNuevo_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNuevo_usuarios.Location = new Point(23, 10);
+            btnNuevo_usuarios.Name = "btnNuevo_usuarios";
+            btnNuevo_usuarios.Size = new Size(100, 40);
+            btnNuevo_usuarios.TabIndex = 0;
+            btnNuevo_usuarios.Text = "Nuevo";
+            btnNuevo_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnNuevo_usuarios.UseVisualStyleBackColor = true;
+            // 
+            // FrmUsuarios
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1476, 897);
+            Controls.Add(pnlBotones_usuarios);
+            Controls.Add(dgvUsuarios);
+            Controls.Add(this.pnlinfo_usuarios);
+            Controls.Add(this.pnlTitulo_usuarios);
+            Name = "FrmUsuarios";
+            Text = "FrmUsuarios";
+            this.pnlTitulo_usuarios.ResumeLayout(false);
+            this.pnlTitulo_usuarios.PerformLayout();
+            this.pnlinfo_usuarios.ResumeLayout(false);
+            this.pnlinfo_usuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
+            pnlBotones_usuarios.ResumeLayout(false);
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel pnlTitulo;
+        private Label lblTitulo;
+        private Panel pnlBusqueda;
+        private Button btnBusqueda;
+        private TextBox txtbusquedaISBN;
+        private Label lblbusqueda;
+        private Panel pnlDatos;
+        private ComboBox cmbEditorial;
+        private ComboBox cmbAutor;
+        private TextBox txtexistencias;
+        private TextBox txtano;
+        private TextBox txtcategoria;
+        private TextBox txttitulo;
+        private Label lblExistencias;
+        private Label lblAño;
+        private Label lblTituloL;
+        private Label lblAutor;
+        private Label lblEditorial;
+        private Label lblCategoria;
+        private Panel panel1;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label lblcorreo_usuarios;
+        private Label lblnombre;
+        private DataGridView dgvUsuarios;
+        private Label lblnombre_usuarios;
+        private TextBox txttelefono_usuarios;
+        private TextBox txtdocumentos_usuarios;
+        private Panel pnlBotones_usuarios;
+        private FontAwesome.Sharp.IconButton btnCancelar_usuarios;
+        private FontAwesome.Sharp.IconButton btnEliminar_usuarios;
+        private FontAwesome.Sharp.IconButton btnEditar_usuarios;
+        private FontAwesome.Sharp.IconButton btnGuardar_usuarios;
+        private FontAwesome.Sharp.IconButton btnNuevo_usuarios;
+    }
+}

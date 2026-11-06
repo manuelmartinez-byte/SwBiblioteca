@@ -386,6 +386,7 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.Size = new Size(883, 260);
             dgvLibros.TabIndex = 4;
+            dgvLibros.CellContentClick += dgvLibros_CellContentClick;
             dgvLibros.CellDoubleClick += dgvLibros_CellDoubleClick;
             // 
             // FrmLibros
@@ -426,16 +427,12 @@
         private Label lblAutor;
         private Label lblTituloL;
         private Label lblEditorial;
-        private Label lblCategoria;
         private Label lblAño;
         private Label lblExistencias;
         private TextBox txtexistencias;
         private TextBox txtano;
-        private TextBox txtcategoria;
         private TextBox txteditorial;
         private TextBox txtautor;
-        private TextBox txttitulo;
-        private TextBox txtISBN;
         private Panel pnlBotones;
         private FontAwesome.Sharp.IconButton btnNuevo;
         private FontAwesome.Sharp.IconButton btnEditar;
@@ -445,5 +442,9 @@
         private DataGridView dgvLibros;
         private ComboBox cmbEditorial;
         private ComboBox cmbAutor;
+        private TextBox txtcategoria;
+        private TextBox txttitulo;
+        private TextBox txtISBN;
+        private Label lblCategoria;
     }
 }
