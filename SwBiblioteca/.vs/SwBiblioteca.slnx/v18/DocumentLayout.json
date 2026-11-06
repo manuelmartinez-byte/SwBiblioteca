@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\manub\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmautores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmautores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Git\\ReleaseNotes.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 18c8b006405c0d52e9dbdf51104db9ffa2bcd891
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\manub\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,8 +42,13 @@
           ]
         },
         {
+<<<<<<< HEAD
           "DockedWidth": 200,
           "SelectedChildIndex": 4,
+=======
+          "DockedWidth": 440,
+          "SelectedChildIndex": 2,
+>>>>>>> 18c8b006405c0d52e9dbdf51104db9ffa2bcd891
           "Children": [
             {
               "$type": "Document",
@@ -69,6 +82,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\Program.cs",
@@ -76,12 +90,35 @@
               "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\Program.cs",
               "RelativeToolTip": "SwBiblioteca\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+=======
+              "DocumentIndex": 0,
+              "Title": "ReleaseNotes.html",
+              "DocumentMoniker": "C:\\Program Files\\Git\\ReleaseNotes.html",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Git\\ReleaseNotes.html",
+              "ToolTip": "C:\\Program Files\\Git\\ReleaseNotes.html",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Git\\ReleaseNotes.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-06T20:13:25.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmLibros.cs",
+              "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.cs",
+              "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmLibros.cs",
+              "ViewState": "AgIAAH0BAAAAAAAAAAAowJ0BAAAjAAAAAAAAAA==",
+>>>>>>> 18c8b006405c0d52e9dbdf51104db9ffa2bcd891
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-06T23:02:27.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "FrmAutores.Designer.cs",
               "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.Designer.cs",
@@ -102,6 +139,39 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+=======
+              "DocumentIndex": 1,
+              "Title": "FrmLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.cs",
+              "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T17:17:26.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmLibros.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.Designer.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.Designer.cs",
+              "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.Designer.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmLibros.Designer.cs",
+              "ViewState": "AgIAAIwBAAAAAAAAAAAewHsBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T22:56:32.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmMenu.cs",
+              "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SwBiblioteca\\FrmMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T22:45:04.29Z"
+>>>>>>> 18c8b006405c0d52e9dbdf51104db9ffa2bcd891
             }
           ]
         }
