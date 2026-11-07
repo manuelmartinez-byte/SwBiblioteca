@@ -14,14 +14,14 @@
 
 ### Sistema de Gestión de Biblioteca
 
-**Presentado por:**\
-\[Manuel Esteban Martinez Carmona\]
+**Presentado por:**
+Manuel Esteban Martinez Carmona
 
-**Docente:**\
-\[Veronica Castro Munar\]
+**Docente:**
+Veronica Castro Munar
 
-**Fecha:**\
-\[Bogota Octubre 2026\]
+**Fecha:**
+Bogota Octubre 2026
 
 ------------------------------------------------------------------------
 
@@ -34,11 +34,11 @@ Avanzada**, aplicando Programación Orientada a Objetos, base de datos
 relacional, arquitectura por capas, operaciones CRUD, validaciones,
 manejo de excepciones y conexión con SQL Server.
 
-**Estudiante(s):** \[Manuel Martinez Carmona\]\
-**Programa:** \[Programación Avanzada\]\
-**Docente:** \[Veronica Castro Munar\]\
-**Institución:** \[CUN\]\
-**Año:** \[2026\]
+**Estudiante(s):** Manuel Martinez Carmona
+**Programa:** Programación Avanzada
+**Docente:** Veronica Castro Munar
+**Institución:** CUN
+**Año:** 2026
 
 ------------------------------------------------------------------------
 
@@ -89,16 +89,15 @@ préstamo y devoluciones
 
 ## 2.1 Objetivo general
 
-Desarrollar un Sistema de Gestión de Biblioteca que permita \[indicar el
-propósito principal del sistema\], utilizando Programación Orientada a
+Desarrollar un Sistema de Gestión de Biblioteca que permita consultar,registrar libros, prestamos y autores, utilizando Programación Orientada a
 Objetos, una base de datos relacional y una arquitectura por capas.
 
-> **Reemplazar o ajustar según el proyecto desarrollado.**
+
 
 ## 2.2 Objetivos específicos
 
 -   Diseñar e implementar una aplicación de escritorio para la gestión
-    de \[indicar alcance\].
+    de gestion de libros
 -   Aplicar principios de Programación Orientada a Objetos.
 -   Diseñar e implementar una base de datos relacional en SQL Server.
 -   Implementar operaciones CRUD para las entidades principales.
@@ -119,26 +118,26 @@ Objetos, una base de datos relacional y una arquitectura por capas.
 
 ## 3.1 Descripción del problema
 
-Describir la situación que origina la necesidad del sistema.
 
-**Ejemplo:**
+En la actualidad, la biblioteca enfrenta problemas para llevar un control ordenado de sus libros, 
+autores, usuarios y préstamos.
+ Al depender de procesos manuales, es común que se cometan equivocaciones, 
+ que se extravíen datos y que resulte complicado saber qué libros están disponibles en un momento dado.
 
-La biblioteca actualmente presenta dificultades para administrar de
-manera organizada la información relacionada con los libros, autores,
-usuarios y préstamos. El manejo manual de esta información puede generar
-errores, pérdida de información y dificultades para conocer la
-disponibilidad de los libros.
+Ante esta situación, se plantea crear una aplicación que reúna y gestione la información de 
+la biblioteca de forma ordenada y eficaz.
 
-Por esta razón, se propone desarrollar una aplicación que permita
-centralizar y administrar la información de la biblioteca de manera
-organizada y eficiente.
 
-> **Adaptar el texto a la problemática definida para el proyecto.**
 
 ## 3.2 Justificación
 
-Explicar por qué es importante desarrollar el sistema y qué beneficios
-proporciona.
+Desarrollar este sistema es importante porque permite a la biblioteca dejar atrás los procesos manuales, que son lentos y propensos a fallos.
+ Con una aplicación centralizada, la información de libros, autores, usuarios y préstamos queda en un solo lugar, accesible y actualizada, lo que 
+ reduce los errores y evita la pérdida de datos.
+
+Además, el sistema ofrece beneficios concretos: el personal puede consultar en segundos la disponibilidad de cualquier libro, se agilizan 
+los procesos de préstamo y devolución, y es posible generar reportes que apoyan la toma de decisiones, como identificar los títulos más 
+solicitados. En conjunto, esto mejora la calidad del servicio que recibe el usuario y optimiza el tiempo y los recursos de la biblioteca.
 
 ## 3.3 Alcance
 
@@ -156,11 +155,9 @@ El sistema permitirá:
 
 ### Fuera del alcance
 
-Indicar las funcionalidades que **no** forman parte de esta versión del
-proyecto.
 
--   \[Funcionalidad no incluida\].
--   \[Funcionalidad no incluida\].
+-   Recibir feedbacks de los clientes
+-   Registrar de que seccion fueron tomados los libros, stand, pasillo
 
 ------------------------------------------------------------------------
 
@@ -168,23 +165,21 @@ proyecto.
 
 ## 4.1 Descripción general
 
-El Sistema de Gestión de Biblioteca permitirá administrar la información
-relacionada con \[entidades principales\] y controlar los procesos de
-\[préstamos, devoluciones, consultas, etc.\].
+El Sistema de Gestión de Biblioteca permitirá administrar la información 
+relacionada con libros, autores y usuarios, y controlar los procesos de préstamos, 
+devoluciones y consultas de disponibilidad.
 
 ## 4.2 Actores del sistema
 
   -----------------------------------------------------------------------
   Actor                               Descripción
   ----------------------------------- -----------------------------------
-  Bibliotecario / Administrador       \[Describir las funciones que
-                                      realiza en el sistema.\]
+  Bibliotecario / Administrador       Puede ver, registrar y modificar
+                                      libros, autores,editoriales y usuarios
 
-  \[Otro actor\]                      \[Descripción.\]
+ 
   -----------------------------------------------------------------------
 
-> **Agregar únicamente los actores que realmente interactúan con el
-> sistema.**
 
 ## 4.3 Requerimientos funcionales
 
@@ -222,11 +217,10 @@ relacionada con \[entidades principales\] y controlar los procesos de
                                                   usuarios con préstamos
                                                   activos.
 
-  RF08                    \[Otro requerimiento\]  \[Descripción.\]
+  
   -----------------------------------------------------------------------
 
-> **Importante:** modificar la tabla para que coincida exactamente con
-> las funcionalidades implementadas.
+
 
 ## 4.4 Requerimientos no funcionales
 
@@ -262,7 +256,7 @@ relacionada con \[entidades principales\] y controlar los procesos de
                           parametrizadas          de datos deben utilizar
                                                   parámetros.
 
-  RNF08                   \[Otro requerimiento\]  \[Descripción.\]
+
   -----------------------------------------------------------------------
 
 ## 4.5 Reglas de negocio
@@ -329,18 +323,19 @@ Insertar aquí el diagrama de casos de uso.
 **Descripción:** Permite registrar, consultar, actualizar, eliminar y
 buscar libros.
 
-**Precondiciones:** - El usuario debe tener acceso al sistema. - \[Otra
-precondición.\]
+**Precondiciones:** - El usuario debe tener acceso al sistema. - debe tener
+la informacion de los libros
 
 **Flujo principal:** 1. El actor ingresa al módulo de libros. 2. El
 sistema muestra los libros registrados. 3. El actor selecciona la
 operación que desea realizar. 4. El sistema procesa la solicitud. 5. El
 sistema muestra el resultado.
 
-**Flujos alternativos:** - \[Describir errores o situaciones
-alternativas.\]
+**Flujos alternativos:** - El actor ingresa al modulo de autores, busca el libro
+de su autor favorito, registra el prestamos en la seccion de prestamos y el sistema
+procesala solucitud
 
-**Postcondiciones:** - \[Indicar el resultado de la operación.\]
+**Postcondiciones:** - El sistema registrara el prestamo sin importar el flujo tomado previamente
 
 ------------------------------------------------------------------------
 
@@ -359,7 +354,7 @@ Verificar disponibilidad. 4. Registrar préstamo. 5. Actualizar
 disponibilidad. 6. Mostrar confirmación.
 
 **Flujos alternativos:** - Usuario inexistente. - Libro inexistente. -
-Libro sin disponibilidad. - \[Otro caso.\]
+Libro sin disponibilidad. - Autor no existente
 
 **Postcondiciones:** - El préstamo queda registrado. - La disponibilidad
 del libro queda actualizada.
@@ -379,7 +374,8 @@ devolución. 3. Calcular días de retraso. 4. Calcular multa cuando
 corresponda. 5. Actualizar disponibilidad. 6. Actualizar el estado del
 préstamo. 7. Mostrar confirmación.
 
-**Flujos alternativos:** - \[Describir situaciones de error.\]
+**Flujos alternativos:** - El prestamo no fue registrado correctamente, el
+flujo no reconocio el prestamo y no es posible realizar la devolucion correspondiente
 
 **Postcondiciones:** - La devolución queda registrada. - El libro vuelve
 a estar disponible según corresponda.
@@ -410,7 +406,7 @@ Insertar aquí el diagrama de clases.
   Prestamo          Gestionar la información de los préstamos.
   DetallePrestamo   Relacionar los libros incluidos en un préstamo.
   Devolucion        Gestionar las devoluciones y calcular retrasos/multas.
-  \[Otra clase\]    \[Responsabilidad.\]
+
 
 ## 6.4 Aplicación de POO
 
@@ -444,18 +440,15 @@ Insertar aquí el modelo entidad-relación.
 
 ## 7.3 Relaciones principales
 
-Describir las relaciones entre las entidades.
+En el sistema, las entidades se conectan entre sí mediante relaciones que reflejan cómo funciona una biblioteca en la práctica.
 
-**Ejemplo:**
+-   Un autor puede escribir varios libros, mientras que cada libro pertenece a un único autor principal.
+-   Una categoría puede agrupar muchos libros, y un libro puede asociarse a una categoría.
+-   Un usuario puede solicitar muchos préstamos a lo largo del tiempo.
+-   Un préstamo puede incluir uno o más libros, según lo que el usuario se lleve en esa operación.
+-   Cada detalle de préstamo corresponde a un solo libro.
+-   Un detalle de préstamo puede dar lugar a una devolución que registre el momento en que el libro regresa a la biblioteca.
 
--   Un autor puede tener muchos libros.
--   Una categoría puede estar asociada a muchos libros.
--   Un usuario puede realizar muchos préstamos.
--   Un préstamo puede contener uno o varios detalles.
--   Un detalle de préstamo corresponde a un libro.
--   Un detalle puede generar una devolución.
-
-> **Modificar según el modelo de base de datos realmente implementado.**
 
 ------------------------------------------------------------------------
 
@@ -568,9 +561,7 @@ Describir las relaciones entre las entidades.
   diasRetraso       INT             \-      No     Número de días de retraso.
   multa             DECIMAL(10,2)   \-      Sí     Valor de la multa, si aplica.
 
-> **IMPORTANTE:** El diccionario debe coincidir exactamente con el
-> script SQL final. Si los nombres, tipos o campos de la base de datos
-> son diferentes, actualizar esta sección.
+
 
 ------------------------------------------------------------------------
 
@@ -604,19 +595,19 @@ Es la capa mediante la cual el usuario interactúa con el sistema.
 
 **Componentes:**
 
--   \[FrmPrincipal\]
--   \[FrmLibros\]
--   \[FrmAutores\]
--   \[FrmCategorias\]
--   \[FrmUsuarios\]
--   \[FrmPrestamos\]
--   \[FrmDevoluciones\]
+-   FrmPrincipal
+-   FrmLibros
+-   FrmAutores
+-   FrmCategorias
+-   FrmUsuarios
+-   FrmPrestamos
+-   FrmDevoluciones
 
 **Tecnología utilizada:**
 
 -   C#
 -   Windows Forms
--   \[.NET versión utilizada\]
+-   NET 8.0
 
 ## 9.4 Capa de Lógica de Negocio
 
@@ -662,14 +653,14 @@ Gestiona la comunicación entre la aplicación y SQL Server.
 **Tecnologías utilizadas:**
 
 -   SQL Server.
--   ADO.NET / \[tecnología realmente utilizada\].
+-   ADO.NET 
 -   Consultas parametrizadas.
 
 ## 9.6 Capa de Base de Datos
 
 La información del sistema se almacena en:
 
-**Base de datos:** `[NombreBaseDatos]`
+**Base de datos:** SwBiblioteca
 
 **Tablas principales:**
 
@@ -704,44 +695,46 @@ llegar nuevamente a la interfaz.
 
 ## 10.1 Módulo de libros
 
-**Objetivo:** \[Descripción.\]
+**Objetivo:** Mantener el catálogo de libros de la biblioteca, con sus datos principales y su estado de disponibilidad.
 
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. -
-Eliminar. - Buscar.
+**Funcionalidades:**
 
-**Validaciones:** - \[Validación.\] - \[Validación.\]
+-   Registrar nuevos libros en el catálogo.
+-   Consultar la información de un libro.
+-   Actualizar los datos de un libro.
+-   Eliminar libros que ya no forman parte del acervo.
+-   Buscar libros por título, autor o categoría.
+
+**Validaciones:**
+
+-   El ISBN debe ser único y tener un formato válido.
+-   El título y el autor son campos obligatorios.
 
 ## 10.2 Módulo de autores
 
-**Objetivo:** \[Descripción.\]
+**Objetivo:** Gestionar la información de los autores asociados a los libros del catálogo.
 
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
+**Funcionalidades:**
+
+-   Registrar autores.
+-   Consultar los datos de un autor y sus libros.
+-   Actualizar la información de un autor.
+-   Eliminar autores que no tengan libros asociados.
 
 ## 10.3 Módulo de categorías
 
-**Objetivo:** \[Descripción.\]
+**Objetivo:** Organizar los libros por temas o géneros para facilitar su clasificación y búsqueda.
 
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
+**Funcionalidades:**
+
+-   Registrar categorías.
+-   Consultar las categorías existentes y los libros que contienen.
+-   Actualizar el nombre o la descripción de una categoría.
+-   Eliminar categorías que no tengan libros asociados.
 
 ## 10.4 Módulo de usuarios
 
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
-
-## 10.5 Módulo de préstamos
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar préstamo. - Consultar préstamos
-activos. - Consultar historial. - Actualizar disponibilidad.
-
-## 10.6 Módulo de devoluciones
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar devolución. - Calcular días de
-retraso. - Calcular multa cuando aplique. - Actualizar disponibilidad.
+**
 
 ## 10.7 Módulo de consultas
 
