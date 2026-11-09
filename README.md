@@ -60,5 +60,10 @@ Aplicación de escritorio para administrar libros, autores, categorías, usuario
 
 ## Documentación
 
-La documentación completa (casos de
+La documentación completa (casos de uso, diagramas, diccionario de datos, arquitectura y pruebas) está en [`Documentacion.md`](Documentacion.md).
+
+## Autor
+
+**Manuel Esteban Martínez Carmona**
+Docente: Verónica Castro Múnar
 
