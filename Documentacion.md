@@ -6,7 +6,7 @@
 
 ## PORTADA
 
-**\[CUN\]**
+**\[CUN - INGENIERIA DE SISTEMAS\]**
 
 **\[PROGRAMACION AVANZADA / 54469\]**
 
@@ -44,8 +44,6 @@ manejo de excepciones y conexión con SQL Server.
 
 # TABLA DE CONTENIDO
 
-> **Nota:** Actualizar esta sección al finalizar el documento, de
-> acuerdo con la numeración real de las páginas.
 
 1.  Introducción
 2.  Objetivos
@@ -109,8 +107,6 @@ Objetos, una base de datos relacional y una arquitectura por capas.
 -   Utilizar Git y GitHub para el control de versiones.
 -   Documentar técnica y funcionalmente el proyecto.
 
-> **Eliminar o agregar objetivos según lo que realmente se haya
-> implementado.**
 
 ------------------------------------------------------------------------
 
@@ -121,8 +117,8 @@ Objetos, una base de datos relacional y una arquitectura por capas.
 
 En la actualidad, la biblioteca enfrenta problemas para llevar un control ordenado de sus libros, 
 autores, usuarios y préstamos.
- Al depender de procesos manuales, es común que se cometan equivocaciones, 
- que se extravíen datos y que resulte complicado saber qué libros están disponibles en un momento dado.
+Al depender de procesos manuales, es común que se cometan equivocaciones, 
+que se extravíen datos y que resulte complicado saber qué libros están disponibles en un momento dado.
 
 Ante esta situación, se plantea crear una aplicación que reúna y gestione la información de 
 la biblioteca de forma ordenada y eficaz.
@@ -132,8 +128,8 @@ la biblioteca de forma ordenada y eficaz.
 ## 3.2 Justificación
 
 Desarrollar este sistema es importante porque permite a la biblioteca dejar atrás los procesos manuales, que son lentos y propensos a fallos.
- Con una aplicación centralizada, la información de libros, autores, usuarios y préstamos queda en un solo lugar, accesible y actualizada, lo que 
- reduce los errores y evita la pérdida de datos.
+Con una aplicación centralizada, la información de libros, autores, usuarios y préstamos queda en un solo lugar, accesible y actualizada, lo que 
+reduce los errores y evita la pérdida de datos.
 
 Además, el sistema ofrece beneficios concretos: el personal puede consultar en segundos la disponibilidad de cualquier libro, se agilizan 
 los procesos de préstamo y devolución, y es posible generar reportes que apoyan la toma de decisiones, como identificar los títulos más 
@@ -393,7 +389,7 @@ responsabilidad.
 
 Insertar aquí el diagrama de clases.
 
-`![Diagrama de clases](ruta/al/diagrama-clases.png)`
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/DIAGRAMA 6.2.png>)
 
 ## 6.3 Principales clases
 
@@ -436,7 +432,7 @@ sistema.
 
 Insertar aquí el modelo entidad-relación.
 
-`![Modelo entidad-relación](ruta/al/modelo-entidad-relacion.png)`
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/DIAGRAMA 7.2.png>)
 
 ## 7.3 Relaciones principales
 
@@ -585,7 +581,7 @@ La arquitectura está compuesta por:
 
 Insertar aquí el diagrama de arquitectura.
 
-`![Arquitectura del sistema](ruta/al/diagrama-arquitectura.png)`
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/DIAGRAMA 9.2.png>)
 
 ## 9.3 Capa de Presentación
 
@@ -734,7 +730,21 @@ llegar nuevamente a la interfaz.
 
 ## 10.4 Módulo de usuarios
 
-**
+**Objetivo:** Gestionar la información de las personas registradas como usuarios de la biblioteca, que son quienes pueden solicitar préstamos.
+
+**Funcionalidades:**
+
+-   Registrar nuevos usuarios con sus datos personales y de contacto.
+-   Consultar la información de un usuario y su estado actual.
+-   Actualizar los datos de contacto o de identificación de un usuario.
+-   Eliminar usuarios que no tengan préstamos activos asociados.
+-   Buscar usuarios por documento o nombre.
+
+**Validaciones:**
+
+-   El número de documento debe ser único en el sistema.
+-   El tipo de documento, el nombre, los apellidos y el estado son campos obligatorios.
+-   El correo electrónico, si se registra, debe tener un formato válido.
 
 ## 10.7 Módulo de consultas
 
@@ -758,54 +768,44 @@ funcionalidades.
 
 ## 11.1 Menú principal
 
-![Menú principal](ruta/captura-menu.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_MENU_PRINCIPAL.png>)
 
-**Descripción:** \[Explicar brevemente la pantalla.\]
+**Descripción:** \[MENU PRINCIPAL.\]
 
 ## 11.2 Gestión de libros
 
-![Gestión de libros](ruta/captura-libros.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA GESTIOR DE LIBROS.png>)
 
-**Descripción:** \[Explicar la funcionalidad.\]
+**Descripción:** \[PODEMOS AÑADIR,EDITAR O ELIMINAR UN LIBRO.\]
 
 ## 11.3 Gestión de autores
 
-![Gestión de autores](ruta/captura-autores.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_GESTION_DE_AUTORES.png>)
 
-**Descripción:** \[Explicar la funcionalidad.\]
+**Descripción:** \[PODEMOS REVISAR LOS MULTIPLES AUTORES REGISTRADOS.\]
 
-## 11.4 Gestión de categorías
-
-![Gestión de categorías](ruta/captura-categorias.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
 
 ## 11.5 Gestión de usuarios
 
-![Gestión de usuarios](ruta/captura-usuarios.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_GESTION_DE_USUARIOS.png>)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_GESTION_DE_USUARIOS2.png>)
 
-**Descripción:** \[Explicar la funcionalidad.\]
+**Descripción:** \[PODREMOS AÑADIR, CONSULTAR O ELIMINAR USUARIOS, TAL CUAL LO MUESTRAN LAS CAPTURAS REALIZADAS.\]
 
 ## 11.6 Registro de préstamos
 
-![Registro de préstamos](ruta/captura-prestamos.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_REGISTRO_PRESTAMOS.png>)
 
-**Descripción:** \[Explicar la funcionalidad.\]
+**Descripción:** \[AQUI PODREMOS CONSULTAR O REGISTRAR PRESTAMOS.\]
 
 ## 11.7 Registro de devoluciones
 
-![Registro de devoluciones](ruta/captura-devoluciones.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_REGISTRO_DE_DEVOLUCIONES.png>)
 
-**Descripción:** \[Explicar la funcionalidad.\]
+**Descripción:** \[PODEMOS REVISAR LOS REGISTROS DE DEVOLUCIONES.\]
 
-## 11.8 Consultas
 
-![Consultas](ruta/captura-consultas.png)
 
-**Descripción:** \[Explicar la funcionalidad.\]
-
-> **Recomendación:** cada captura debe tener una breve explicación y
-> mostrar una funcionalidad real del sistema.
 
 ------------------------------------------------------------------------
 

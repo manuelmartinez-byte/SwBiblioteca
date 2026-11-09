@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\manub\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -38,8 +38,7 @@
               "RelativeToolTip": "SwBiblioteca\\FrmReportes.Designer.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAIAwwK4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T03:17:43.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T03:17:43.656Z"
             },
             {
               "$type": "Document",
@@ -63,18 +62,21 @@
               "ToolTip": "C:\\Users\\manub\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs [Dise\u00F1o]",
               "RelativeToolTip": "SwBiblioteca\\FrmReportes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T03:10:58.367Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-09T03:10:58.367Z"
             }
           ]
         },
         {
-          "DockedWidth": 159,
+          "DockedWidth": 241,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
