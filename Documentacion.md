@@ -859,15 +859,16 @@ Insertar capturas que demuestren los resultados de las pruebas.
 
 ### Prueba CP01
 
-![Evidencia CP01](ruta/prueba01.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_CP1.1.png>)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_CP1.2.png>)
 
-**Resultado:** \[Descripción.\]
+**Resultado:** \[REGISTRO DEL LIBRO PRUEBA.\]
 
 ### Prueba CP02
 
-![Evidencia CP02](ruta/prueba02.png)
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CAPTURA_CP2.1.png>)
 
-**Resultado:** \[Descripción.\]
+**Resultado:** \[INTENTO DE REGISTRO CON EL MISMO ISBN FALLIDO.\]
 
 ------------------------------------------------------------------------
 
@@ -875,7 +876,7 @@ Insertar capturas que demuestren los resultados de las pruebas.
 
 ## Conclusión 1
 
-Aprendi bastante durante este proyecto, fue mi primer aplicativo creado y me entretuve bastante aunque no fue para nada sencillo
+Aprendi bastante durante este proyecto, fue mi primer aplicativo creado y me entretuve bastante aunque no fue para nada sencillo, cabe la pena aclarar que tuve apoyo de la IA mermaid para mis diagramas, aunque con esto tuve que aprender a crear codigo de diagrama para que ella lo generara, asi mismo en mis primeras revisiones me apoye del copilot de github para poder buscar errores que dure intentando solucionar o entender por mi cuenta por horas.
 
 ## Conclusión 2
 
@@ -905,25 +906,33 @@ Uno de los mayores retos fue intentar aplicar guias recomendadas por el copilot 
 
 ## Anexo A. Repositorio GitHub
 
-**Repositorio:** \[Enlace al repositorio\]
+**Repositorio:** \ https://github.com/manuelmartinez-byte/SwBiblioteca
 
 ## Anexo B. Script de base de datos
 
-**Archivo:** `[Nombre del archivo .sql]`
+**Archivo:** [`\[sql file/SwBiblioteca_log.ldf\]`](<sql file/SwBiblioteca_log.ldf>)
 
 ## Anexo C. Evidencia de Git y GitHub
 
-Insertar capturas que evidencien:
+
 
 -   Creación del repositorio.
 
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/CREACION REPO LOCAL.png>)
+
 -   Commits realizados.
+
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/PRUEBA COMITS.png>)
 
 -   Organización del proyecto.
 
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/ORGANIZACION DE PROYECTO.png>)
+
 -   Publicación del código.
 
--   README.md.
+![C:\Users\manub\Documents\GitHub\SwBiblioteca\IMAGENES](<IMAGENES/PUBLICACION CODIGO Y REPO.png>)
+
+
 
 
 
@@ -931,30 +940,30 @@ Insertar capturas que evidencien:
 
 # LISTA DE VERIFICACIÓN ANTES DE ENTREGAR
 
--   [ ] Portada.
--   [ ] Contraportada.
--   [ ] Introducción.
--   [ ] Objetivos.
--   [ ] Tabla de contenido.
--   [ ] Numeración de páginas.
--   [ ] Planteamiento del problema.
--   [ ] Análisis de requerimientos.
--   [ ] Casos de uso.
--   [ ] Diagrama de casos de uso.
--   [ ] Diagrama de clases.
--   [ ] Modelo entidad-relación.
--   [ ] Diccionario de datos.
--   [ ] Arquitectura del sistema.
--   [ ] Explicación de cada módulo.
--   [ ] Capturas de pantalla.
--   [ ] Pruebas de funcionamiento.
--   [ ] Conclusiones.
--   [ ] Recomendaciones.
--   [ ] Código fuente completo.
--   [ ] Script SQL.
--   [ ] Datos de prueba.
--   [ ] Repositorio GitHub.
--   [ ] README.md.
--   [ ] Evidencia de commits.
+-   [x] Portada.
+-   [x] Contraportada.
+-   [x] Introducción.
+-   [x] Objetivos.
+-   [x] Tabla de contenido.
+-   [x] Numeración de páginas.
+-   [x] Planteamiento del problema.
+-   [x] Análisis de requerimientos.
+-   [x] Casos de uso.
+-   [x] Diagrama de casos de uso.
+-   [x] Diagrama de clases.
+-   [x] Modelo entidad-relación.
+-   [x] Diccionario de datos.
+-   [x] Arquitectura del sistema.
+-   [x] Explicación de cada módulo.
+-   [x] Capturas de pantalla.
+-   [x] Pruebas de funcionamiento.
+-   [x] Conclusiones.
+-   [x] Recomendaciones.
+-   [x] Código fuente completo.
+-   [x] Script SQL.
+-   [x] Datos de prueba.
+-   [x] Repositorio GitHub.
+-   [x] README.md.
+-   [x] Evidencia de commits.
 
 ------------------------------------------------------------------------
