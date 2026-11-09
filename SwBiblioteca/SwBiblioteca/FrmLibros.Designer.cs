@@ -133,6 +133,7 @@
             // pnlDatos
             // 
             pnlDatos.Controls.Add(cmbEditorial);
+            pnlDatos.Controls.Add(pnlBotones);
             pnlDatos.Controls.Add(cmbAutor);
             pnlDatos.Controls.Add(txtexistencias);
             pnlDatos.Controls.Add(txtano);
@@ -294,10 +295,11 @@
             pnlBotones.Controls.Add(btnEditar);
             pnlBotones.Controls.Add(btnGuardar);
             pnlBotones.Controls.Add(btnNuevo);
-            pnlBotones.Location = new Point(389, 485);
+            pnlBotones.Location = new Point(401, 274);
             pnlBotones.Name = "pnlBotones";
             pnlBotones.Size = new Size(617, 63);
             pnlBotones.TabIndex = 3;
+            pnlBotones.Paint += pnlBotones_Paint;
             // 
             // btnCancelar
             // 
@@ -381,10 +383,12 @@
             // 
             // dgvLibros
             // 
+            dgvLibros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLibros.Location = new Point(123, 554);
+            dgvLibros.Dock = DockStyle.Fill;
+            dgvLibros.Location = new Point(0, 467);
             dgvLibros.Name = "dgvLibros";
-            dgvLibros.Size = new Size(883, 260);
+            dgvLibros.Size = new Size(1350, 262);
             dgvLibros.TabIndex = 4;
             dgvLibros.CellContentClick += dgvLibros_CellContentClick;
             dgvLibros.CellDoubleClick += dgvLibros_CellDoubleClick;
@@ -395,7 +399,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 729);
             Controls.Add(dgvLibros);
-            Controls.Add(pnlBotones);
             Controls.Add(pnlDatos);
             Controls.Add(pnlBusqueda);
             Controls.Add(pnlTitulo);

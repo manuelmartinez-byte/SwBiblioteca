@@ -193,10 +193,12 @@
             // 
             // dgvEditoriales
             // 
+            dgvEditoriales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvEditoriales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEditoriales.Location = new Point(198, 427);
+            dgvEditoriales.Dock = DockStyle.Fill;
+            dgvEditoriales.Location = new Point(0, 412);
             dgvEditoriales.Name = "dgvEditoriales";
-            dgvEditoriales.Size = new Size(883, 260);
+            dgvEditoriales.Size = new Size(1517, 486);
             dgvEditoriales.TabIndex = 12;
             dgvEditoriales.CellDoubleClick += dgvEditoriales_CellDoubleClick;
             // 

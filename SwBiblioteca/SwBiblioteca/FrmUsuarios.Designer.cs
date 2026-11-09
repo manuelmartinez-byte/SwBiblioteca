@@ -79,6 +79,7 @@
             // 
             // pnlinfo_usuarios
             // 
+            pnlinfo_usuarios.Controls.Add(pnlBotones_usuarios);
             pnlinfo_usuarios.Controls.Add(txttelefono_usuarios);
             pnlinfo_usuarios.Controls.Add(txtdocumentos_usuarios);
             pnlinfo_usuarios.Controls.Add(lblnombre_usuarios);
@@ -202,10 +203,12 @@
             // 
             // dgvUsuarios
             // 
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(238, 490);
+            dgvUsuarios.Dock = DockStyle.Fill;
+            dgvUsuarios.Location = new Point(0, 412);
             dgvUsuarios.Name = "dgvUsuarios";
-            dgvUsuarios.Size = new Size(883, 260);
+            dgvUsuarios.Size = new Size(1476, 485);
             dgvUsuarios.TabIndex = 5;
             // 
             // pnlBotones_usuarios
@@ -215,7 +218,7 @@
             pnlBotones_usuarios.Controls.Add(btnEditar_usuarios);
             pnlBotones_usuarios.Controls.Add(btnGuardar_usuarios);
             pnlBotones_usuarios.Controls.Add(btnNuevo_usuarios);
-            pnlBotones_usuarios.Location = new Point(430, 417);
+            pnlBotones_usuarios.Location = new Point(440, 286);
             pnlBotones_usuarios.Name = "pnlBotones_usuarios";
             pnlBotones_usuarios.Size = new Size(617, 63);
             pnlBotones_usuarios.TabIndex = 6;
@@ -305,7 +308,6 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1476, 897);
-            Controls.Add(pnlBotones_usuarios);
             Controls.Add(dgvUsuarios);
             Controls.Add(pnlinfo_usuarios);
             Controls.Add(pnlTitulo_usuarios);

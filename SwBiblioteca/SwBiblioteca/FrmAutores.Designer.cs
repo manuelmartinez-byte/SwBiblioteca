@@ -114,7 +114,6 @@
             pnlBotones_autores.Name = "pnlBotones_autores";
             pnlBotones_autores.Size = new Size(617, 63);
             pnlBotones_autores.TabIndex = 11;
-       
             // 
             // btnCancelarautores
             // 
@@ -178,7 +177,7 @@
             btnGuardarautores.Text = "Guardar";
             btnGuardarautores.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGuardarautores.UseVisualStyleBackColor = true;
-            btnGuardarautores.Click += btnGuardar_Click;        
+            btnGuardarautores.Click += btnGuardar_Click;
             // 
             // btnNuevoautores
             // 
@@ -217,10 +216,12 @@
             // 
             // dgvAutores
             // 
+            dgvAutores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvAutores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAutores.Location = new Point(222, 441);
+            dgvAutores.Dock = DockStyle.Fill;
+            dgvAutores.Location = new Point(0, 412);
             dgvAutores.Name = "dgvAutores";
-            dgvAutores.Size = new Size(883, 260);
+            dgvAutores.Size = new Size(1452, 357);
             dgvAutores.TabIndex = 13;
             dgvAutores.CellDoubleClick += dgvAutores_CellDoubleClick;
             // 

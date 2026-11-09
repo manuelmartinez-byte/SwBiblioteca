@@ -612,5 +612,10 @@ namespace SwBiblioteca
         {
 
         }
+
+        private void pnlBotones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
